@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Monotalic';
+    src: local('Monotalic Regular'), local('Monotalic-Regular'),
+        url('../fonts/monotalicregular/Monotalic-Regular.woff2') format('woff2'),
+        url('../fonts/monotalicregular/Monotalic-Regular.woff2') format('woff'),
+        url('../fonts/monotalicregular/Monotalic-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+.quote{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    font-size: 14px;
+    font-family: Monotalic;
+ 
+}
+
+video {
+   position:relative;
+   min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 799px;
+    z-index: 2; 
+    object-fit: cover;
+}
+
+.intro {
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(115, 173, 196);
+    transition: 1s
+}
+
+h1 {
+    font-family: Monotalic;
+}
+
+.loading-header {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+    color: white;
+}
+
+.loading {
+    opacity: 0;
+}
+
+.loading.active {
+    opacity: 1;
+    transition: 1s;
+}
+
+.loading.fade {
+    opacity: 0;
+    transition: 1s;
+}
+
+.gif {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.gif.active {
+    opacity: 1;
+    transition: 1s;
+}
+
+.gif.fade {
+    opacity: 0;
+    transition: 1s;
+}
